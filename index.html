@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
@@ -90,46 +91,92 @@
                 </div>
             </div>
             <!-- Repeat .post as needed for more posts -->
+
+            <div class="comment-container">
+                <div class="comment">
+                    <img src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg" alt="User Image" class="user-img">
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="username">Adamsdavid</span>
+                            <span class="time-ago">20 hours ago</span>
+                        </div>
+                        <p class="comment-text">I genuinely think that Codewell's community is AMAZING. It's just starting out but the templates on there are amazing.</p>
+                        <div class="comment-footer">
+                            <!-- <span class="vote">⬆ 2</span> -->
+                            <a href="#" class="reply">Reply</a>
+                            <a href="#" class="report">Report</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="comment reply-comment">
+                    <img src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg" alt="User Image" class="user-img">
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="username">Saramay</span>
+                            <span class="time-ago">16 hours ago</span>
+                        </div>
+                        <p class="comment-text">I agree. I've been coding really well (pun intended) ever since I started practicing on their templates hehe.</p>
+                        <div class="comment-footer">
+                            <!-- <span class="vote">⬆ 5</span> -->
+                            <a href="#" class="reply">Reply</a>
+                            <a href="#" class="report">Report</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="comment reply-comment">
+                    <img src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg" alt="User Image" class="user-img">
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="username">Jessica21</span>
+                            <span class="time-ago">14 hours ago</span>
+                        </div>
+                        <p class="comment-text">Okay, this comment wins.</p>
+                        <div class="comment-footer">
+                            <!-- <span class="vote">⬆ 5</span> -->
+                            <a href="#" class="reply">Reply</a>
+                            <a href="#" class="report">Report</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="comment">
+                    <img src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg" alt="User Image" class="user-img">
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="username">Andrew231</span>
+                            <span class="time-ago">20 hours ago</span>
+                        </div>
+                        <p class="comment-text">Thanks for making this, super helpful.</p>
+                        <div class="comment-footer">
+                            <!-- <span class="vote">⬆ 2</span> -->
+                            <a href="#" class="reply">Reply</a>
+                            <a href="#" class="report">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Sidebar Section -->
         <aside class="sidebar">
-            <div class="Login">
+            <div class="login-box">
                 <h3>Login</h3>
-                <form method="POST" class="my-login-validation" novalidate="">
-                    <div class="form-group">
-                        <label for="email" class="email">E-Mail Address</label>
-                        <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
-                        <div class="invalid-feedback">
-                            Email is invalid
-                        </div>
+                <form>
+                    <div class="textbox">
+                        <input type="text" placeholder="Username" name="username" required>
                     </div>
-
-                    <div class="form-group">
-                        <label for="password" class="password">Password</label>
-                        <input id="password" type="password" class="form-control" name="password" required data-eye>
-                        <div class="invalid-feedback">
-                            Password is required
-                        </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" name="password" required>
                     </div>
-
-                    <div class="form-group">
-                        <div class="custom-checkbox custom-control">
-                            <input type="checkbox" name="remember" id="remember" class="custom-control-input">
-                            <label for="remember" class="custom-control-label">Remember Me</label>
-                        </div>
+                    <div class="remember">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
                     </div>
-
-                    <div class="form-group m-0">
-                        <button type="submit" class="btn btn-primary btn-block">
-                            Login
-                        </button>
-                    </div>
-                    <div class="Last">
-                        Don't have an account? <a href="#">Create One</a>
-                    </div>
+                    <button type="submit" class="btn">Login</button>
                 </form>
-
             </div>
             <div class="categories">
                 <h3>Categories</h3>
