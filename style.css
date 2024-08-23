@@ -313,12 +313,25 @@ header {
 
 .categories ul, .threads ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .categories li, .threads li {
     font-size: 14px;
     color: #555;
     margin-bottom: 10px;
+}
+
+.categories li a, .threads li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.categories li a:hover, .threads li a:hover {
+    color: #007bff; /* Change color on hover */
 }
 
 .poll ul {
@@ -329,6 +342,106 @@ header {
     font-size: 14px;
     color: #555;
     margin-bottom: 10px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.faq-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.faq-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.faq-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-title:hover {
+    background-color: #ececec;
+    color: rgba(216, 41, 2, 0.766);
+    font-weight: bold;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f1f1f1;
+    padding: 0 15px;
+}
+
+.accordion-content p {
+    padding: 15px 0;
+    margin: 0;
+}
+
+.accordion-item.open .accordion-content {
+    max-height: 150px;
+}
+
+.accordion-item.open .accordion-title {
+    background-color: #f0f0f0;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#backToTopBtn:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* Footer Section */
