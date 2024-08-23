@@ -1,15 +1,50 @@
+/* Responsive styles */
 @media (max-width: 768px) {
-    .comment-container {
-        padding: 15px;
+    .container {
+        flex-direction: column;
+    }
+
+    .forum-posts {
+        width: 100%;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post-left {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .avatar {
+        margin-right: 0;
     }
 
     .comment {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .user-img {
-        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .reply-comment {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-right h2 {
+        font-size: 16px;
+    }
+
+    .post-right p {
+        font-size: 12px;
+    }
+
+    .post-meta {
+        font-size: 10px;
     }
 
     .comment-header {
@@ -20,75 +55,92 @@
     .time-ago {
         margin-top: 5px;
     }
+}
+
+
+@media (max-width: 768px) {
+    .comment {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start;
+    }
+
+    .comment-content {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 10px;
+    }
 
     .reply-comment {
-        margin-left: 50px;
+        margin-left: 0; /* Remove indentation on smaller screens */
+    }
+
+    .comment-footer {
+        flex-direction: column; /* Stack reply and report vertically */
+        align-items: flex-start;
+    }
+
+    .reply, .report {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between reply and report */
     }
 }
 
 @media (max-width: 480px) {
-    .comment-container {
-        padding: 10px;
+    .user-img {
+        width: 40px;
+        height: 40px;
     }
 
-    .reply-comment {
-        margin-left: 40px;
+    .username {
+        font-size: 14px;
+    }
+
+    .time-ago {
+        font-size: 10px;
+    }
+
+    .comment-text {
+        font-size: 14px;
     }
 
     .comment-footer {
         font-size: 12px;
     }
-
-    .vote {
-        margin-right: 15px;
-    }
 }
 
-/* Media Queries */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .login-box {
-        padding: 15px;
+    .sidebar {
+        width: 100%;
     }
-    .textbox input {
-        padding: 8px;
-    }
-    .btn {
-        padding: 8px;
-        font-size: 14px;
-    }
-}
 
-/* Responsive design */
-@media (max-width: 768px) {
+    .login-box h3, .categories h3, .poll h3, .threads h3 {
+        font-size: 22px;
+    }
+
     .categories li, .threads li {
         font-size: 16px;
-        margin-bottom: 12px;
     }
-}
 
-@media (max-width: 480px) {
-    .categories li, .threads li {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .login-box {
-        padding: 10px;
-    }
-    .textbox input {
-        padding: 6px;
-        font-size: 14px;
-    }
     .btn {
-        padding: 6px;
-        font-size: 12px;
-    }
-    .remember label {
         font-size: 14px;
     }
 }
+
+@media (max-width: 480px) {
+    .login-box h3, .categories h3, .poll h3, .threads h3 {
+        font-size: 18px;
+    }
+
+    .categories li, .threads li {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .faq-container {
@@ -125,5 +177,29 @@
         font-size: 14px;
         bottom: 15px;
         right: 15px;
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 600px) {
+    footer {
+        padding: 15px 0;
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+    footer {
+        padding: 18px 0;
+        font-size: 15px; /* Slightly larger font for tablets */
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 993px) {
+    footer {
+        padding: 20px 0;
+        font-size: 16px; /* Original font size for desktops */
     }
 }

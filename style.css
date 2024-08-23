@@ -83,15 +83,16 @@ header {
     justify-content: space-between;
     width: 85%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-/* Forum Posts Section */
 .forum-posts {
     width: 70%;
 }
 
 .post {
     display: flex;
+    flex-direction: column; /* Change direction for small screens */
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
@@ -141,12 +142,12 @@ header {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.49);
     padding: 20px;
-    /* max-width: 600px; */
     width: 100%;
 }
 
 .comment {
     display: flex;
+    flex-direction: column; /* Change direction for small screens */
     align-items: flex-start;
     margin-bottom: 20px;
 }
@@ -191,12 +192,6 @@ header {
     font-size: 14px;
 }
 
-/* .vote {
-    margin-right: 20px;
-    cursor: pointer;
-    color: #333;
-} */
-
 .reply, .report {
     margin-right: 20px;
     text-decoration: none;
@@ -215,15 +210,84 @@ header {
 /* Sidebar Section */
 .sidebar {
     width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
+/* Ensure elements have a consistent width */
 .login-box, .categories, .poll, .threads {
+    width: 100%;
     background-color: #f9f9f9;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Textbox input fields */
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: none;
+    border-bottom: 1px solid #5a5a5a;
+    color: black;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    background-color: #7289da;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Headings */
+.login-box h3, .categories h3, .poll h3, .threads h3 {
+    font-size: 27px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+.categories ul, .threads ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.categories li, .threads li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.categories li a, .threads li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.categories li a:hover, .threads li a:hover {
+    color: #007bff;
+}
+
+.poll ul {
+    list-style-type: none;
+}
+
+.poll ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 /* .login-box {
@@ -239,48 +303,6 @@ header {
     margin-bottom: 20px;
 } */
 
-.textbox {
-    margin-bottom: 20px;
-}
-
-.textbox input {
-    width: 100%;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: none;
-    border-bottom: 1px solid #5a5a5a;
-    color: black;
-    font-size: 16px;
-}
-
-.textbox input:focus {
-    outline: none;
-    border-bottom: 1px solid #7289da;
-}
-
-.remember {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.remember input {
-    margin-right: 10px;
-}
-
-.btn {
-    width: 100%;
-    background-color: #7289da;
-    border: none;
-    padding: 10px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.btn:hover {
-    background-color: #5a6fb9;
-}
 /* 
 .Login .email, .password, .custom-control-label {
 	color: black;
@@ -305,56 +327,18 @@ header {
 	color: black;
 } */
 
-.login-box h3, .categories h3, .poll h3, .threads h3 {
-    font-size: 27px;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.categories ul, .threads ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.categories li, .threads li {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.categories li a, .threads li a {
-    text-decoration: none;
-    color: #555;
-    display: block;
-    padding: 5px 0;
-    transition: color 0.3s ease;
-}
-
-.categories li a:hover, .threads li a:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-.poll ul {
-    list-style-type: none;
-}
-
-.poll ul li {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
 .faq-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    max-width: 1200px;
+    width: 100%;
+    /* max-width: 1200px; */
     margin: auto;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.1); */
 }
 
 .faq-image {
