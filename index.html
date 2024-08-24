@@ -15,17 +15,43 @@
 <body>
     <!-- Header Section -->
     <header>
-        <!-- <div class="thumbnail-container"> -->
-            <div class="thumbnail">
-                <img src="https://images.pexels.com/photos/415368/pexels-photo-415368.jpeg?cs=srgb&dl=pexels-pixabay-415368.jpg&fm=jpg" alt="Banner Image" class="banner">
-                <div class="text-overlay">
-                    <h2>Forum</h2>
+        <div class="thumbnail">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">🔍</button>
+            </div>
+            <div class="content">
+                <h2>JOIN THE CONVERSATION</h2>
+                <p>Connect . Share . Grow</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="number">54+</span>
+                    <p>Community Groups</p>
                 </div>
-            <!-- </div> -->
+                <div class="stat-item">
+                    <span class="number">27+</span>
+                    <p>Upcoming Events</p>
+                </div>
+                <div class="stat-item">
+                    <span class="number">10000+</span>
+                    <p>Registered Members</p>
+                </div>
+            </div>
         </div>
-    
-        <!-- <img src="https://images.pexels.com/photos/415368/pexels-photo-415368.jpeg?cs=srgb&dl=pexels-pixabay-415368.jpg&fm=jpg" alt="Banner Image" class="banner"> -->
     </header>
+     
+    <div class="pagination-container">
+        <ul class="pagination">
+            <li><a href="#" class="prev">Previous</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#" class="active">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="next">Next</a></li>
+        </ul>
+    </div>
 
     <!-- Main Container -->
     <div class="container">
@@ -49,13 +75,30 @@
 
             <div class="post">
                 <div class="post-left">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsNWPhXbh68-pBV7iNSR76TAgOVQRSqkuogA&s" alt="User Avatar" class="avatar">
+                    <img src="data:image/jpeg;base64,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" alt="User Avatar" class="avatar">
                 </div>
                 <div class="post-right">
-                    <h2>10 Kids Unaware of Their Halloween Costume</h2>
-                    <p>It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.</p>
+                    <h2>What Instagram Ads Will Look Like</h2>
+                    <p>Instagram offered a first glimpse at what its ads will look like in a blog post Thursday The sample ad, which you can see below.
+                    </p>
                     <div class="post-meta">
-                        <span class="comments">560 Comments</span>
+                        <span class="comments">456 Comments</span>
+                        <span class="views">1,568 Views</span>
+                        <span class="time">2 days ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-left">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTilq9Pygb0dFdkwuRmkrkF0_HBOOF2B2Gajg&s" alt="User Avatar" class="avatar">
+                </div>
+                <div class="post-right">
+                    <h2>The Future of Magazines Is on Tablets</h2>
+                    <p>Eric Schmidt has seen the future of magazines, and it's on the tablet. At a Magazine Publishers Association.
+                    </p>
+                    <div class="post-meta">
+                        <span class="comments">78Comments</span>
                         <span class="views">1,568 Views</span>
                         <span class="time">24 min ago</span>
                     </div>
@@ -64,30 +107,15 @@
 
             <div class="post">
                 <div class="post-left">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsNWPhXbh68-pBV7iNSR76TAgOVQRSqkuogA&s" alt="User Avatar" class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy7Dq6P5WaR282wMq2PWkJr-CI8Tl6-6h0GA&s" alt="User Avatar" class="avatar">
                 </div>
                 <div class="post-right">
-                    <h2>10 Kids Unaware of Their Halloween Costume</h2>
-                    <p>It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.</p>
+                    <h2>Pinterest Now Worth $3.8 Billion</h2>
+                    <p>Pinterest's valuation is closing in on $4 billion after its latest funding round of $225 million, according to a report.</p>
                     <div class="post-meta">
-                        <span class="comments">560 Comments</span>
+                        <span class="comments">89 Comments</span>
                         <span class="views">1,568 Views</span>
-                        <span class="time">24 min ago</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-left">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsNWPhXbh68-pBV7iNSR76TAgOVQRSqkuogA&s" alt="User Avatar" class="avatar">
-                </div>
-                <div class="post-right">
-                    <h2>10 Kids Unaware of Their Halloween Costume</h2>
-                    <p>It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.</p>
-                    <div class="post-meta">
-                        <span class="comments">560 Comments</span>
-                        <span class="views">1,568 Views</span>
-                        <span class="time">24 min ago</span>
+                        <span class="time">15 min ago</span>
                     </div>
                 </div>
             </div>
@@ -95,7 +123,7 @@
 
             <div class="comment-container">
                 <div class="comment">
-                    <img src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg" alt="User Image" class="user-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwEjgoMk9eKhCaO_murkj7-S5zKOOa_LO2g&s" alt="User Image" class="user-img">
                     <div class="comment-content">
                         <div class="comment-header">
                             <span class="username">Adamsdavid</span>
@@ -111,7 +139,7 @@
                 </div>
         
                 <div class="comment reply-comment">
-                    <img src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg" alt="User Image" class="user-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnFxHtu1-rUk-gU9N7hqe-CRd-6eF7zxgCTQ&s" alt="User Image" class="user-img">
                     <div class="comment-content">
                         <div class="comment-header">
                             <span class="username">Saramay</span>
@@ -143,7 +171,7 @@
                 </div>
         
                 <div class="comment">
-                    <img src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg" alt="User Image" class="user-img">
+                    <img src="https://img.freepik.com/free-photo/headshot-attractive-man-smiling-pleased-looking-intrigued-standing-blue-background_1258-65468.jpg" alt="User Image" class="user-img">
                     <div class="comment-content">
                         <div class="comment-header">
                             <span class="username">Andrew231</span>
@@ -151,7 +179,6 @@
                         </div>
                         <p class="comment-text">Thanks for making this, super helpful.</p>
                         <div class="comment-footer">
-                            <!-- <span class="vote">⬆ 2</span> -->
                             <a href="#" class="reply">Reply</a>
                             <a href="#" class="report">Report</a>
                         </div>
@@ -189,7 +216,6 @@
                     <li><a href="#">Stupid Bugs & Solves</a></li>
                     <li><a href="#">Video & Audio Drivers</a></li>
                     <li><a href="#">2K Official Forums</a></li>
-                    <!-- More categories -->
                 </ul>
 
             </div>            
@@ -211,7 +237,6 @@
                     <li><a href="#">Sony QX10: A Funky, Overpriced Lens Camera for Your Smartphone</a></li>
                     <li><a href="#">FedEx Simplifies Shipping for Small Business</a></li>
                     <li><a href="#">Loud and Brave: Saudi Women Set to Protest Driving Ban</a></li>
-                    <!-- More threads -->
                 </ul>
             </div>
         </aside>
@@ -288,101 +313,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Forum</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-        .posts {
-            margin: 20px 0;
-        }
-        .post {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 10px;
-            border: #ccc 1px solid;
-        }
-        .post h3 {
-            margin: 0;
-        }
-        .post p {
-            margin: 10px 0 0;
-        }
-        .new-post {
-            background: #fff;
-            padding: 20px;
-            border: #ccc 1px solid;
-        }
-        .new-post input, .new-post textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        .new-post button {
-            padding: 10px 20px;
-            background: #333;
-            color: #fff;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Forum</h1>
-        </div>
-    </header>
-    <div class="container">
-        <div class="posts">
-            <div class="post">
-                <h3>Post Title 1</h3>
-                <p>This is the content of the first post.</p>
-            </div>
-            <div class="post">
-                <h3>Post Title 2</h3>
-                <p>This is the content of the second post.</p>
-            </div>
-        </div>
-        <div class="new-post">
-            <h3>Add a New Post</h3>
-            <form>
-                <input type="text" placeholder="Post Title" required>
-                <textarea placeholder="Post Content" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-</body>
-</html> -->

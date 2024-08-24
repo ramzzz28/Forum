@@ -1,3 +1,192 @@
+/* Media Queries for Responsiveness */
+/* @media screen and (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    .thumbnail {
+        height: auto;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .search-bar input[type="text"] {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        font-size: 14px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .stats {
+        flex-direction: column;
+        bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .stat-item {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .number {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-bar input[type="text"] {
+        width: 55%;
+        font-size: 12px;
+    }
+
+    .search-bar button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .number {
+        font-size: 24px;
+    }
+
+    .stats {
+        bottom: 5px;
+    }
+} */
+
+@media (max-width: 768px) {
+    header {
+        height: 250px;
+    }
+
+    .thumbnail {
+        height: 280px;
+        padding: 15px;
+    }
+
+    .search-bar {
+        width: 90%;
+        top: 5px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 65%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .stats {
+        bottom: 20px;
+        padding: 10px;
+    }
+
+    .stat-item {
+        margin-right: 15px;
+        font-size: 12px;
+    }
+
+    .number {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 200px;
+    }
+
+    .thumbnail {
+        height: 220px;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 95%;
+        top: 5px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 60%;
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    .search-bar button {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .stats {
+        bottom: 15px;
+        padding: 5px;
+    }
+
+    .stat-item {
+        margin-right: 10px;
+        font-size: 11px;
+    }
+
+    .number {
+        font-size: 24px;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .pagination a {
+        padding: 8px 10px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .pagination li {
+        margin: 3px 0;
+    }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {

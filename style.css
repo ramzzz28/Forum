@@ -6,6 +6,11 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    /* background: linear-gradient(to right , rgb(215, 183, 94) , rgb(251, 247, 207) , rgb(215, 183, 94)); */
+    background: #FEFAE0;
+}
+
 /* Header Section */
 header {
     width: 100%;
@@ -14,67 +19,132 @@ header {
     margin-bottom: 20px;
 }
 
-/* .thumbnail-container {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    position: relative;
-} */
-
 .thumbnail {
-    width: 100%;
-    height: 100%;
     position: relative;
-    overflow: hidden;
-}
-
-.thumbnail img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease, filter 0.5s ease;
+    height: 320px;
+    /* background-image: url('https://png.pngtree.com/background/20230614/original/pngtree-fall-season-wallpaper-picture-image_3505599.jpg'); */
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231023/pngtree-ethereal-khaki-green-watercolor-background-handcrafted-pastel-olive-green-color-with-image_13688541.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.thumbnail .text-overlay {
+.search-bar {
     position: absolute;
-    bottom: 0;
+    top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: transparent;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+.content {
+    text-align: center;
+    color: #787874;
+    z-index: 1;
+}
+
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    color: rgb(97, 116, 12);
+}
+
+.content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+}
+
+.stats {
+    position: absolute;
+    bottom: 25px;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    transform: translateY(100%);
-    transition: transform 0.5s ease;
+    background-color: transparent;
+    padding: 15px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: #787874;
+   
+}
+
+.stat-item {
     text-align: center;
+    margin-right: 20px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 }
 
-.thumbnail .text-overlay h3 {
-    margin: 0;
-    font-size: 20px;
-    transition: opacity 0.5s ease;
-    opacity: 0;
+.stat-item:last-child {
+    margin-right: 0;
 }
 
-.thumbnail:hover img {
-    transform: scale(1.1);
-    filter: brightness(0.7);
+.number {
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(97, 116, 12);
 }
 
-.thumbnail:hover .text-overlay {
-    transform: translateY(0);
+.pagination-container {
+    background: #FEFAE0;
+    padding: 20px;
 }
 
-.thumbnail:hover .text-overlay h2{
-    opacity: 1;
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #E0E5B6;
+}
+
+.pagination a:hover {
+    background-color: #7289da;
+    color: #fff;
 }
 
 /* Main Container */
@@ -92,12 +162,13 @@ header {
 
 .post {
     display: flex;
-    flex-direction: column; /* Change direction for small screens */
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 50px;
+    border-width: 5px;
+    border-color:#E0E5B6;
 }
 
 .post-left {
@@ -147,7 +218,7 @@ header {
 
 .comment {
     display: flex;
-    flex-direction: column; /* Change direction for small screens */
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
@@ -217,12 +288,14 @@ header {
 /* Ensure elements have a consistent width */
 .login-box, .categories, .poll, .threads {
     width: 100%;
-    background-color: #f9f9f9;
+    /* background-image:linear-gradient( to right,#877ab1 , rgb(248, 185, 96)); */
+    background-color:#E0E5B6;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Textbox input fields */
@@ -251,7 +324,7 @@ header {
 /* Headings */
 .login-box h3, .categories h3, .poll h3, .threads h3 {
     font-size: 27px;
-    color: black;
+    color: rgb(97, 116, 12);
     margin-bottom: 10px;
 }
 
@@ -263,69 +336,34 @@ header {
 
 .categories li, .threads li {
     font-size: 14px;
-    color: #555;
+    color: white;
     margin-bottom: 10px;
 }
 
 /* Links */
 .categories li a, .threads li a {
     text-decoration: none;
-    color: #555;
+    color: rgb(100, 97, 97);
     display: block;
     padding: 5px 0;
     transition: color 0.3s ease;
 }
 
 .categories li a:hover, .threads li a:hover {
-    color: #007bff;
+    color:  #7289da;
 }
 
 .poll ul {
     list-style-type: none;
+    
 }
 
 .poll ul li {
     font-size: 14px;
-    color: #555;
+    color: rgb(100, 97, 97);
     margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* .login-box {
-    background-color: #23272a;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-} */
-
-/* .login-box h2 {
-    color: white;
-    text-align: left;
-    margin-bottom: 20px;
-} */
-
-/* 
-.Login .email, .password, .custom-control-label {
-	color: black;
-}
-
-.Login .form-control {
-	border-width: 2.3px;
-}
-
-.Login .form-group label {
-	width: 100%;
-}
-
-
-.Login .btn.btn-block {
-	padding: 12px 10px;
-}
-
-.Last {
-	text-align: center;
-	margin-top: 10px;
-	color: black;
-} */
 
 .faq-container {
     display: flex;
@@ -334,11 +372,9 @@ header {
     justify-content: center;
     padding: 20px;
     width: 100%;
-    /* max-width: 1200px; */
     margin: auto;
-    background: #fff;
+    background:#FEFAE0;
     border-radius: 10px;
-    /* box-shadow: 0 10px 20px rgba(0,0,0,0.1); */
 }
 
 .faq-image {
@@ -371,7 +407,7 @@ h1 {
     padding: 15px;
     text-align: left;
     font-size: 1.2rem;
-    background-color: #fff;
+    background: #E0E5B6;
     border: none;
     outline: none;
     cursor: pointer;
