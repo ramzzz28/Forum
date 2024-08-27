@@ -15,12 +15,17 @@ accordionItems.forEach(item => {
 
 const toggleItem = (item) => {
     const content = item.querySelector('.accordion-content');
+    const icon = item.querySelector('.accordion-title i'); // Select the icon element
 
     if (item.classList.contains('open')) {
         content.removeAttribute('style');
         item.classList.remove('open');
+        icon.classList.remove('fa-chevron-up'); // Change the icon to down arrow
+        icon.classList.add('fa-chevron-down');
     } else {
         content.style.maxHeight = content.scrollHeight + 'px';
         item.classList.add('open');
+        icon.classList.remove('fa-chevron-down'); // Change the icon to up arrow
+        icon.classList.add('fa-chevron-up');
     }
 }

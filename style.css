@@ -417,6 +417,10 @@ h1 {
     align-items: center;
 }
 
+.accordion-title i {
+    transition: transform 0.3s ease;
+}
+
 .accordion-title:hover {
     background-color: #ececec;
     color: rgba(216, 41, 2, 0.766);
@@ -442,6 +446,10 @@ h1 {
 
 .accordion-item.open .accordion-title {
     background-color: #f0f0f0;
+}
+
+.accordion-item.open .accordion-title i{
+    transform: rotate(0deg);
 }
 
 #backToTopBtn {
