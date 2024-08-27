@@ -119,6 +119,7 @@ header {
 .pagination-container {
     background: #FEFAE0;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .pagination {

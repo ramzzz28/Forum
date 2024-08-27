@@ -172,6 +172,22 @@
     }
 }
 
+@media (max-width: 560px) {
+    .pagination-container {
+        padding: 15px;
+        margin-top: 40px; /* Adjust margin top for small screens */
+    }
+
+    .pagination a {
+        padding: 8px 12px; /* Adjust padding for pagination links */
+        font-size: 0.9rem;  /* Adjust font size */
+    }
+
+    .pagination li {
+        margin: 0 3px; /* Adjust margin between pagination items */
+    }
+}
+
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     .pagination a {
@@ -184,6 +200,22 @@
 
     .pagination li {
         margin: 3px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .pagination-container {
+        padding: 15px;
+        margin-top: 40px; /* Adjust margin top for small screens */
+    }
+
+    .pagination a {
+        padding: 8px 12px; /* Adjust padding for pagination links */
+        font-size: 0.9rem;  /* Adjust font size */
+    }
+
+    .pagination li {
+        margin: 0 3px; /* Adjust margin between pagination items */
     }
 }
 
